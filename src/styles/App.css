@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.App {
+    text-align: center;
+}
+
+.card-container {
+    position: relative;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: "background";
+    /* grid-template-columns: auto 1fr; */
+    width: 800px;
+    height: 400px;
+}
+
+.card-background {
+    grid-area: background;
+    background-image: url('../assets/a.avif'); /* 替换为你的背景图路径 */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.card-title {
+    grid-area: background;
+    align-self: end;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    z-index: 1;
+}
